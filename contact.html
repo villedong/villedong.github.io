@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body background="bg.jpg">
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
   <a class="navbar-brand" href="index.html">
@@ -38,8 +38,11 @@
 <div class="row" style="margin-top:80px">
 <div class="col-sm-1"></div> 
 <div class="col-sm-11"> 
-<div class="container">
+<div class="container bg-light rounded">
   <h2>Ota yhteyttä</h2>
+  <div class="alert alert-danger">
+    <strong>Huomio!</strong> Yhteydenottolomake ei ole vielä toiminnassa.
+  </div>
   <form action="contact.html">
     <div class="form-group">
       <label for="name">Nimi:</label>
@@ -57,11 +60,20 @@
 	  <label for="comment">Viesti:</label>
       <textarea class="form-control" rows="5" id="comment"></textarea>
     </div> 
-    <button type="submit" class="btn btn-primary">Lähetä</button>
-  </form>
+    
+	<a href="#" class="btn btn-primary" data-toggle="popover" title="Hups!" data-content="Lähetä-nappikaan ei toimi koska lomake ei toimi">Lähetä</a>
+
+    <!-- <button type="submit" class="btn btn-primary">Lähetä</button> -->
+  </form> 
 </div>
 </div>  
 </div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
 
 </body>
 </html>
