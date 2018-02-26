@@ -28,36 +28,40 @@
         <a class="nav-link" href="info.html">Info</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Ota yhteyttä</a>
-      </li>     
+        <a class="nav-link active" href="contact.html">Ota yhteyttä</a>
+      </li>   
     </ul>
   </div>  
 </nav>
 <br>
 
 <div class="row" style="margin-top:80px">
-<div class="col-sm-9">
-<div class="jumbotron">
-  <h1>Tervehdys!</h1>
-  <p></p>
-  <p>Olen <b>Ville Niskanen</b>, 22-vuotias opiskelija Kajaanista. Opiskelen tieto- ja viestintätekniikan insinööriksi <a href="https://www.kamk.fi">Kajaanin ammattikorkeakoulussa</a>, 
-  erikoistumisalueenani älykkäät järjestelmät.</p>
-  <p>Vapaa-ajalla toimin paljon voimanoston parissa ja ylläpidän mm. <a href="https://www.sotkamonvisa.fi">Sotkamon Visan</a> ja <a href="https://www.suomenvoimanostoliitto.fi">Suomen Voimanostoliiton</a> verkkosivuja.</p> 
-</div>
-</div>
-<div class="col-sm-3">
-<div class="card" style="width:300px">
-    <img class="card-img-top" src="profile.jpg" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Ville Niskanen</h4>
-      <p class="card-text">Tieto- ja viestintätekniikan insinööriopiskelija (AMK)</p>
-      <a href="info.html" class="btn btn-primary">Lue lisää</a>
+<div class="col-sm-1"></div> 
+<div class="col-sm-11"> 
+<div class="container">
+  <h2>Ota yhteyttä</h2>
+  <form action="contact.html">
+    <div class="form-group">
+      <label for="name">Nimi:</label>
+      <input type="text" class="form-control" id="name">
     </div>
+    <div class="form-group">
+      <label for="email">Sähköposti:</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="phone">Puhelinnumero:</label>
+      <input type="text" class="form-control" id="phone">
+    </div>
+     <div class="form-group">
+	  <label for="comment">Viesti:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div> 
+    <button type="submit" class="btn btn-primary">Lähetä</button>
+  </form>
 </div>
+</div>  
 </div>
-</div>
-
-
 
 </body>
 </html>
